@@ -1,0 +1,144 @@
+================================================================================
+                    MANUEL TECHNIQUE & NOTICE D'UTILISATION
+                     SYSTEME MULTI-CURRENCY RETRO BANK V2.0
+================================================================================
+
+1. DESCRIPTION GLOBALE DU SYSTEME
+----------------------------------
+Le programme est un simulateur bancaire premium couplé à un courtier boursier 
+(Broker) mondialisé à haute fréquence. Il simule des flux de compensation et 
+des comptes localisés dans 5 puissances ou zones géographiques distinctes : 
+la RDC, la France (Zone Euro), le Canada, la Chine et le Royaume-Uni.
+
+Le logiciel intègre plusieurs sous-systèmes interconnectés :
+  - Un Moteur Forex Live : Calcule la fluctuation en temps réel de 5 devises 
+    (FC, USD, EUR, CNY, GBP) et d'une crypto-monnaie (le RetroCoin - RTC) 
+    via des ondes sinusoïdales et des micro-ajustements aléatoires.
+  - Un Module Géopolitique Aléatoire : Déclenche des crises mondiales spontanées 
+    (Cyberattaques, tweets d'Elon Musk, découvertes de gisements en RDC) 
+    qui impactent instantanément l'économie générale du marché.
+  - Une Cellule Anti-Blanchiment (TRACFIN) : Surveille les mouvements de fonds. 
+    Tout dépôt/transfert supérieur à 10 000 USD ou virement suspect est tracé, 
+    augmente le score de risque du client et peut geler son compte.
+  - Un Moteur de Trading Spéculatif (Marge & Levier) : Permet aux clients 
+    de trader le RetroCoin au comptant (Spot) ou d'ouvrir des positions Longues 
+    avec un effet de levier de 10x, incluant un risque de liquidation forcée 
+    (Margin Call) en cas de chute du cours.
+  - Un Automate de programmation (Limit Buy) : Exécute des ordres d'achat 
+    automatiques en arrière-plan dès qu'un seuil de prix fixé est atteint.
+  - Un Traitement Rigide des Créances : Applique une inflation de 0.5% par cycle 
+    sur les comptes courants inactifs et déclenche des saisies automatiques sur 
+    compte (10% de la dette prélevée de force) si un prêt dépasse 45 jours.
+  - Une Base de Données Autonome : Sauvegarde et charge dynamiquement toutes 
+    les structures de données dans le fichier "banque_sauvegarde.txt".
+
+
+2. PROCEDURES DE CONNEXION AU TERMINAL
+---------------------------------------
+
+A. ESPACE SECURISE CLIENT (Option 1 du menu d'accueil)
+   - Choisissez l'option 1.
+   - Saisissez l'ID Utilisateur (sensible à la casse, ex: Jean123).
+   - Saisissez le Code Secret. Les caractères s'affichent sous forme d'étoiles (*) 
+     pour masquer la saisie à l'écran.
+   - Vous disposez de 3 tentatives maximum avant d'être rejeté au menu principal.
+
+B. TERMINAL D'ADMINISTRATION MASQUE (Option 2 du menu d'accueil)
+   - L'accès Admin est totalement furtif. Pour vous connecter :
+     * Choisissez l'option 2 au menu d'accueil.
+     * Le système vous demande une "Cle Securite (*)".
+     * Saisissez le mot de passe maître : admin123  (la saisie est masquée par des *).
+   - Le panneau d'administration Premium vous permet de créer des comptes, de taxer 
+     les fortunes, d'auditer la cellule anti-blanchiment TRACFIN ou d'altérer 
+     directement la puissance de base des taux de change mondiaux (Option 11).
+
+
+3. REPERTOIRE DES COMPTES CLIENTS PAR DÉFAUT (INITIALISATION INFRASTRUCTURE)
+-----------------------------------------------------------------------------
+
+Le système injecte automatiquement 6 profils internationaux diversifiés si aucun 
+fichier de sauvegarde n'est détecté sur le disque :
+
+================================================================================
+[COMPTE N°1] - REPUBLIQUE DEMOCRATIQUE DU CONGO
+================================================================================
+  - ID Utilisateur : Jean123
+  - Code Secret    : 1234
+  - Sexe           : Masculin (M)
+  - Soldes Initiaux: Courant : 1 500 000 FC   |  2 500 USD  |  100 EUR
+                     Epargne : 3 000 000 FC   |  5 000 USD  |  0 EUR
+  - Caractéristiques Carte Virtuelle : Numéro 4500123456789012 | Gamme: Gold 
+                     Plafond de retrait hebdomadaire : 3 000 USD
+  - Statut Initial : Actif | Score Risque : 5% | Jetons Crypto : 0 RTC
+
+================================================================================
+[COMPTE N°2] - FRANCE (ZONE EURO)
+================================================================================
+  - ID Utilisateur : Marie456
+  - Code Secret    : 5678
+  - Sexe           : Féminin (F)
+  - Soldes Initiaux: Courant : 0 FC   |  150 USD  |  1 200 EUR
+                     Epargne : 0 FC   |  0 USD    |  4 500 EUR
+  - Caractéristiques Carte Virtuelle : Numéro 4900876543210987 | Gamme: Platinum 
+                     Plafond de retrait hebdomadaire : 7 500 USD
+  - Statut Initial : Actif | Score Risque : 10% | Jetons Crypto : 0 RTC
+
+================================================================================
+[COMPTE N°3] - CANADA (PROFIL SURENDETTÉ)
+================================================================================
+  - ID Utilisateur : Pierre789
+  - Code Secret    : 0000
+  - Sexe           : Masculin (M)
+  - Soldes Initiaux: Courant : 0 FC   |  80 USD  |  0 EUR
+                     Epargne : 0 FC   |  0 USD   |  0 EUR
+  - Créance Actives: Dette de Prêt : 1 200 USD imputer | Carence : 34 jours
+  - Caractéristiques Carte Virtuelle : Numéro 4100555566667777 | Gamme: Classic 
+                     Plafond de retrait hebdomadaire : 1 000 USD
+  - Statut Initial : Surveillance | Score Risque : 55% | Jetons Crypto : 0 RTC
+  * Note technique : Ce compte subira une saisie automatique s'il reste inactif.
+
+================================================================================
+[COMPTE N°4] - REPUBLIQUE DEMOCRATIQUE DU CONGO (PROFIL TRADER)
+================================================================================
+  - ID Utilisateur : Kader243
+  - Code Secret    : 3333
+  - Sexe           : Masculin (M)
+  - Soldes Initiaux: Courant : 450 000 FC   |  10 USD  |  0 EUR  |  400 CNY
+                     Epargne : 1 200 000 FC |  0 USD   |  0 EUR
+  - Caractéristiques Carte Virtuelle : Numéro 4200999988887777 | Gamme: Gold 
+                     Plafond de retrait hebdomadaire : 3 000 USD
+  - Statut Initial : Actif | Score Risque : 15% | Jetons Crypto : 14 RTC
+
+================================================================================
+[COMPTE N°5] - CHINE (PROFIL GRANDE INFRASTRUCTURE ASIA)
+================================================================================
+  - ID Utilisateur : Wong888
+  - Code Secret    : 8888
+  - Sexe           : Masculin (M)
+  - Soldes Initiaux: Courant : 500 USD | 25 000 CNY (Yuan)
+                     Epargne : 60 000 CNY
+  - Caractéristiques Carte Virtuelle : Numéro 4600111122223333 | Gamme: Platinum 
+                     Plafond de retrait hebdomadaire : 7 500 USD
+  - Statut Initial : Actif | Score Risque : 8% | Jetons Crypto : 0 RTC
+
+================================================================================
+[COMPTE N°6] - ROYAUME-UNI (PROFIL COMPTE PREMIUM GBP)
+================================================================================
+  - ID Utilisateur : Smith777
+  - Code Secret    : 7777
+  - Sexe           : Masculin (M)
+  - Soldes Initiaux: Courant : 100 USD | 3 500 GBP (Livre Sterling)
+                     Epargne : 9 000 GBP
+  - Caractéristiques Carte Virtuelle : Numéro 4700444455556666 | Gamme: Gold 
+                     Plafond de retrait hebdomadaire : 3 000 USD
+  - Statut Initial : Actif | Score Risque : 12% | Jetons Crypto : 2 RTC
+
+================================================================================
+4. ARCHITECTURE ET JOURNAUX TRAÇABLES
+================================================================================
+Chaque événement, rapport TRACFIN ou exécution d'ordre automatisé génère une line 
+d'écriture horodatée dans le fichier d'audit local : "banque_audit.log". 
+En cas de dysfonctionnement sur votre compilateur Dev-C++ 5.11, assurez-vous 
+que l'exécutable possède les droits d'écriture dans son dossier racine pour 
+créer et modifier les fichiers d'audit et de sauvegarde textuels.
+================================================================================
